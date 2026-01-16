@@ -5,7 +5,7 @@ pandas
 opencv-python
 Pillow
 scikit-learn
-cv2
+opencv-python
 os
 pathlib
 preprocessing.image_pipeline
