@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Classificação de Acidentes</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+<body>
+
+<div class="container">
+    <h1>Classificação de Acidentes</h1>
+    <p class="subtitle">Envie uma imagem para análise</p>
+
+    <form id="uploadForm">
+        <label class="upload-box">
+            <input type="file" id="imageInput" accept="image/*" required>
+            <span>📂 Clique para selecionar uma imagem</span>
+        </label>
+
+        <button type="submit">Analisar imagem</button>
+    </form>
+
+    <div id="preview" class="preview hidden"></div>
+
+    <div id="result" class="result hidden"></div>
+    <div id="probs" class="probs hidden"></div>
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
